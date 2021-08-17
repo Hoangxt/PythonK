@@ -1,0 +1,5 @@
+DayGiaTri = input("Nhập vào các dãy số cách nhau bởi khoảng trắng: ")
+DanhSachGiatri = DayGiaTri.split()
+DanhSachSo = map(int, DanhSachGiatri)
+SumCuaDaySo = sum(DanhSachSo)
+print("Tổng của dãy số: ", SumCuaDaySo)
