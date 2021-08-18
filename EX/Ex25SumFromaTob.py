@@ -5,9 +5,13 @@ try:
     if a > b:
         print('a must < b')
     else:
+        # sum = 0
+        # for i in range(a, b+1):
+        #     sum += i
+        # print("Sum: {}".format(sum))
         sum = 0
         for i in range(a, b+1):
             sum += i
         print("Sum: {}".format(sum))
 except:
-    print("Error!")
+    print("Error! Re-enter")
