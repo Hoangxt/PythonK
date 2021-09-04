@@ -7,6 +7,7 @@ lambda arguments: expression
 
 # a lambda function that adds 69 to the input argument
 
+
 from functools import reduce
 def f(x): return x+10
 def f(x): return x+69
@@ -31,6 +32,7 @@ Custom sorting using a lambda function as key parameter
 '''
 
 points2D = [(1, 9), (4, 1), (5, -3), (10, 2)]
+print(sorted(points2D))
 sorted_by_y = sorted(points2D, key=lambda x: x[1])
 print(sorted_by_y)
 
@@ -43,6 +45,12 @@ print(sorted_by_abs)
 Use lambda for map function
 '''
 # map(func, seq), transforms each element with the function.
+
+#list_keyword = input("Enter a string: ").split()
+
+list_keyword = ["thu hai", "thu ba", "hoang", "grotery"]
+print(list(map(lambda x: x.title(), list_keyword)))
+
 a = [1, 2, 3, 4, 5, 6]
 b = list(map(lambda x: x * 2, a))
 
@@ -56,7 +64,7 @@ print(c)
 Use lambda for filter function
 '''
 # filter(func, seq), returns all elements for which func evaluates to True.
-
+#a = input("Enter a list number: ").split()
 a = [1, 2, 3, 4, 5, 6, 7, 8]
 b = list(filter(lambda x: (x % 2 == 0), a))
 
